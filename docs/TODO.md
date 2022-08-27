@@ -1,2 +1,2 @@
-- støvsug youtube for Prismic
-- jeg tror ikke jeg bruger Document(). Det er der er link til Google Fonts.
+- Støvsug youtube for Prismic
+- Du kan ikke CSS endnu. Lad være at prøve at lave lækkert design uden Tailwind.

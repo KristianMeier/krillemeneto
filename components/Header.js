@@ -17,7 +17,7 @@ export const Header = ({
 }) => {
   return (
     <Bounded as='header'>
-      <div className='header'>
+      <div className='header-container'>
         <nav>
           <ul className='header-nav'>
             <NavItem>
