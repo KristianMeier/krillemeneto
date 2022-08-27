@@ -3,17 +3,21 @@
   padding-right: 1rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
 
-  @media (min-width: 1024px) {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-
-  @media (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .bounded-padding {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .bounded-padding {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 }
 
@@ -44,4 +48,91 @@
   text-align: center;
   font-size: 0.9rem;
   color: #fff;
+}
+
+.footer {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 6rem;
+}
+
+.footer-buttom-text {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  text-align: center;
+  width: 100%;
+  max-width: 48rem;
+}
+
+.nav-item {
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+.header {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 4rem;
+}
+
+.header-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+}
+
+.heading {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
+    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-weight: 600;
+  letter-spacing: -0.05em;
+  color: rgb(30 41 59);
+}
+
+.heading-4xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
+@media screen and (min-width: 768px) {
+  .heading-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+.heading-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+.heading-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+.heading-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.horizontal-divider {
+  width: 50%;
+  height: 1px;
+  border-width: 0;
+  background-color: rgb(226 232 240);
+}
+
+@media screen and (min-width: 768px) {
+  .horizontal-divider {
+    max-width: 24rem;
+  }
+}
+
+.layout-color {
+  color: rgb(51 65 85);
 }

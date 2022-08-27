@@ -1,53 +1,13 @@
-import * as prismicH from "@prismicio/helpers";
-import { PrismicLink, PrismicText } from "@prismicio/react";
-import { PrismicNextImage } from "@prismicio/next";
+import * as prismicH from '@prismicio/helpers'
+import { PrismicLink, PrismicText } from '@prismicio/react'
 
-import { Bounded } from "./Bounded";
-import { Heading } from "./Heading";
-import { HorizontalDivider } from "./HorizontalDivider";
-
-const Profile = ({ name, description, profilePicture }) => {
-  return (
-    <div className="px-4">
-      <div className="grid max-w-lg grid-cols-1 justify-items-center gap-8">
-        <PrismicLink href="/" tabIndex="-1">
-          <div className="relative h-40 w-40 overflow-hidden rounded-full bg-slate-300">
-            {prismicH.isFilled.image(profilePicture) && (
-              <PrismicNextImage
-                field={profilePicture}
-                layout="fill"
-                className="object-cover"
-              />
-            )}
-          </div>
-        </PrismicLink>
-        {(prismicH.isFilled.richText(name) ||
-          prismicH.isFilled.richText(description)) && (
-          <div className="grid grid-cols-1 gap-2 text-center">
-            {prismicH.isFilled.richText(name) && (
-              <Heading>
-                <PrismicLink href="/">
-                  <PrismicText field={name} />
-                </PrismicLink>
-              </Heading>
-            )}
-            {prismicH.isFilled.richText(description) && (
-              <p className="font-serif text-2xl italic leading-normal tracking-tight text-slate-500">
-                <PrismicText field={description} />
-              </p>
-            )}
-          </div>
-        )}
-      </div>
-    </div>
-  );
-};
+import { Bounded } from './Bounded'
+import { HorizontalDivider } from './HorizontalDivider'
+import { Profile } from './Profile'
 
 const NavItem = ({ children }) => {
-  return (
-    <li className="font-semibold tracking-tight text-slate-800">{children}</li>
-  );
-};
+  return <li className='nav-item'>{children}</li>
+}
 
 export const Header = ({
   withDivider = true,
@@ -56,12 +16,12 @@ export const Header = ({
   settings,
 }) => {
   return (
-    <Bounded as="header">
-      <div className="grid grid-cols-1 justify-items-center gap-20">
+    <Bounded as='header'>
+      <div className='header'>
         <nav>
-          <ul className="flex flex-wrap justify-center gap-10">
+          <ul className='header-nav'>
             <NavItem>
-              <PrismicLink href="/">
+              <PrismicLink href='/'>
                 <PrismicText field={navigation.data.homepageLabel} />
               </PrismicLink>
             </NavItem>
@@ -84,5 +44,5 @@ export const Header = ({
         {withDivider && <HorizontalDivider />}
       </div>
     </Bounded>
-  );
-};
+  )
+}
