@@ -136,3 +136,46 @@
 .layout-color {
   color: rgb(51 65 85);
 }
+
+.profile-padding {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.profile-grid {
+  display: grid;
+  justify-items: center;
+  max-width: 32rem;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.profile-picture {
+  overflow: hidden;
+  position: relative;
+  width: 10rem;
+  height: 10rem;
+  background-color: rgb(203 213 225);
+  border-radius: 50%;
+}
+
+.profile-picture-fit {
+  object-fit: cover;
+}
+
+.profile-text-grid {
+  display: grid;
+  text-align: center;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+
+.profile-text {
+  font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
+  font-size: 1.3rem;
+  line-height: 2rem;
+  font-style: italic;
+  letter-spacing: -0.025em;
+  line-height: 1.5;
+  color: rgb(100 116 139);
+}

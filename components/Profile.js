@@ -6,22 +6,22 @@ import { Heading } from './Heading'
 
 export const Profile = ({ name, description, profilePicture }) => {
   return (
-    <div className='px-4'>
-      <div className='grid max-w-lg grid-cols-1 justify-items-center gap-8'>
+    <div className='profile-padding'>
+      <div className='profile-grid'>
         <PrismicLink href='/' tabIndex='-1'>
-          <div className='relative h-40 w-40 overflow-hidden rounded-full bg-slate-300'>
+          <div className='profile-picture'>
             {prismicH.isFilled.image(profilePicture) && (
               <PrismicNextImage
                 field={profilePicture}
                 layout='fill'
-                className='object-cover'
+                className='profile-picture-fit'
               />
             )}
           </div>
         </PrismicLink>
         {(prismicH.isFilled.richText(name) ||
           prismicH.isFilled.richText(description)) && (
-          <div className='grid grid-cols-1 gap-2 text-center'>
+          <div className='profile-text-grid'>
             {prismicH.isFilled.richText(name) && (
               <Heading>
                 <PrismicLink href='/'>
@@ -30,7 +30,7 @@ export const Profile = ({ name, description, profilePicture }) => {
               </Heading>
             )}
             {prismicH.isFilled.richText(description) && (
-              <p className='font-serif text-2xl italic leading-normal tracking-tight text-slate-500'>
+              <p className='profile-text'>
                 <PrismicText field={description} />
               </p>
             )}

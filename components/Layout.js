@@ -1,5 +1,5 @@
-import { Header } from "./Header";
-import { Footer } from "./Footer";
+import { Header } from './Header'
+import { Footer } from './Footer'
 
 export const Layout = ({
   navigation,
@@ -10,7 +10,7 @@ export const Layout = ({
   children,
 }) => {
   return (
-    <div className="text-slate-700">
+    <div className='layout-color'>
       <Header
         withProfile={withProfile}
         withDivider={withHeaderDivider}
@@ -20,5 +20,5 @@ export const Layout = ({
       <main>{children}</main>
       <Footer withSignUpForm={withSignUpForm} settings={settings} />
     </div>
-  );
-};
+  )
+}
