@@ -179,3 +179,89 @@
   line-height: 1.5;
   color: rgb(100 116 139);
 }
+
+.signupform-padding {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.signupform-grid {
+  display: grid;
+  width: 100%;
+  max-width: 36rem;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.signupform-text {
+  font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
+  letter-spacing: -0.025em;
+  text-align: center;
+  color: rgb(100 116 139);
+}
+
+.signupform-heading {
+  margin-bottom: 1rem;
+}
+
+.signupform-headingtwo {
+  margin-bottom: 1rem;
+  font-style: italic;
+}
+
+.inputfield-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+
+.inputfield-position {
+  position: relative;
+}
+
+.only-screenreaders {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.inputfield {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 0.75rem;
+  padding-right: 2.5rem;
+  width: 100%;
+  border-radius: 0;
+  border-bottom-width: 1px;
+  border-color: rgb(226 232 240);
+  color: rgb(30 41 59);
+}
+
+.signupform-arrow {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  align-items: center;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  justify-content: center;
+  color: rgb(148 163 184);
+}
+
+.signupform-disclaimer {
+  font-size: 0.75rem;
+  line-height: 1rem;
+  letter-spacing: -0.025em;
+  text-align: center;
+  color: rgb(100 116 139);
+}
