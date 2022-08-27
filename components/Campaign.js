@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Campaign = () => {
   return (
-    <div className='campaign-banner'>
+    <div className='campaignbanner'>
       <p>
         <strong>
           👋 Velkommen til Meneto - den mindre virksomheds bogholder.{' '}
@@ -12,7 +12,7 @@ export const Campaign = () => {
           href=''
           target='_blank'
           rel='noreferrer'
-          style={{ textDecoration: 'underline' }}
+          className='campaignbanner-link'
         >
           10% på det første år.
         </a>

@@ -12,7 +12,10 @@ export const Footer = ({ withSignUpForm = true, settings }) => {
         {withSignUpForm && <SignUpForm settings={settings} />}
         <div className='footer-buttom-text'>
           Proudly published using{' '}
-          <PrismicLink href='https://prismic.io' className='text-slate-700'>
+          <PrismicLink
+            href='https://prismic.io'
+            className='foot-published-prismic'
+          >
             Prismic
           </PrismicLink>
         </div>

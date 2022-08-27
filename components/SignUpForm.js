@@ -24,8 +24,8 @@ export const SignUpForm = ({ settings }) => {
             />
           </div>
         )}
-        <div className='inputfield-grid'>
-          <div className='inputfield-position'>
+        <div className='emailsignup-grid'>
+          <div className='emailsignup-position'>
             <label>
               <span className='only-screenreaders'>Email address</span>
               <input
@@ -33,7 +33,7 @@ export const SignUpForm = ({ settings }) => {
                 type='email'
                 placeholder='jane.doe@example.com'
                 required={true}
-                className='inputfield'
+                className='emailsignup'
               />
             </label>
             <button type='submit' className='signupform-arrow'>

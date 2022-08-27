@@ -1,3 +1,9 @@
+.body-smoothening {
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .bounded-padding {
   padding-left: 1rem;
   padding-right: 1rem;
@@ -5,21 +11,23 @@
   padding-bottom: 2rem;
 }
 
-@media screen and (min-width: 768px) {
+/* @media screen and (min-width: 768px) {
   .bounded-padding {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
   }
-}
-
+} */
+/* 
 @media screen and (min-width: 1024px) {
   .bounded-padding {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
   }
-}
+} */
 
 .bounded-full-width-center {
   width: 100%;
@@ -42,12 +50,16 @@
   max-width: 72rem;
 }
 
-.campaign-banner {
+.campaignbanner {
   background: #2ab04e;
   padding: 0.5rem;
   text-align: center;
   font-size: 0.9rem;
   color: #fff;
+}
+
+.campaignbanner-link {
+  text-decoration: 'underline';
 }
 
 .footer {
@@ -65,6 +77,10 @@
   text-align: center;
   width: 100%;
   max-width: 48rem;
+}
+
+.foot-published-prismic {
+  color: rgb(51 65 85);
 }
 
 .nav-item {
@@ -87,9 +103,7 @@
 }
 
 .heading {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-    'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji',
-    'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-family: 'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"';
   font-weight: 600;
   letter-spacing: -0.05em;
   color: rgb(30 41 59);
@@ -171,7 +185,7 @@
 }
 
 .profile-text {
-  font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
+  font-family: 'Georgia, Cambria, "Times New Roman", Times, serif';
   font-size: 1.3rem;
   line-height: 2rem;
   font-style: italic;
@@ -194,7 +208,7 @@
 }
 
 .signupform-text {
-  font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
+  font-family: 'Georgia, Cambria, "Times New Roman", Times, serif';
   letter-spacing: -0.025em;
   text-align: center;
   color: rgb(100 116 139);
@@ -209,13 +223,13 @@
   font-style: italic;
 }
 
-.inputfield-grid {
+.emailsignup-grid {
   display: grid;
   grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: 0.5rem;
 }
 
-.inputfield-position {
+.emailsignup-position {
   position: relative;
 }
 
@@ -231,7 +245,7 @@
   border-width: 0;
 }
 
-.inputfield {
+.emailsignup {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
   padding-left: 0.75rem;
@@ -264,4 +278,341 @@
   letter-spacing: -0.025em;
   text-align: center;
   color: rgb(100 116 139);
+}
+
+.latestarticle-header {
+  color: rgb(31 41 55);
+  margin-bottom: 0.75rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 600;
+  letter-spacing: -0.05em;
+}
+
+@media screen and (min-width: 768px) {
+  .latestarticle {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+.latestarticle-paragraph {
+  font-family: 'Georgia, Cambria, "Times New Roman", Times, serif';
+  font-style: italic;
+  letter-spacing: -0.05em;
+  color: rgb(107 114 128);
+}
+
+.article-link {
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  color: rgb(156 163 175);
+}
+
+.article-head {
+  padding-bottom: 0;
+}
+
+.article-title {
+  color: rgb(30 41 59);
+  margin-bottom: 0.75rem;
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 600;
+  letter-spacing: -0.05em;
+}
+
+@media screen and (min-width: 768px) {
+  .article-title {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+.article-subtitel {
+  font-family: 'Georgia, Cambria, "Times New Roman", Times, serif';
+  font-style: italic;
+  letter-spacing: -0.05em;
+  color: rgb(100 116 139);
+}
+
+.article-endsection {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .article-endsection {
+    gap: 6rem;
+  }
+}
+
+.article-endsection-width {
+  width: 100%;
+}
+
+.article-lastarticles {
+  margin-bottom: 2.5rem;
+}
+
+.article-lastarticles-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 3rem;
+}
+
+.richtext-h2 {
+  margin-bottom: 1.75rem;
+  margin-top: 3rem;
+}
+
+.richtext-h2:first-child {
+  margin-top: 0;
+}
+
+.richtext-h2:last-child {
+  margin-bottom: 0;
+}
+
+.richtext-h3 {
+  margin-bottom: 1.75rem;
+}
+
+.richtext-h3:last-child {
+  margin-bottom: 0;
+}
+
+.richtext-olist,
+.richtext-ul {
+  padding-left: 1rem;
+  margin-bottom: 1.75rem;
+}
+
+.richtext-olist:last-child,
+.richtext-ul:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .richtext-olist,
+  .richtext-ul {
+    padding-left: 1.5rem;
+  }
+}
+
+.richtext-olist-item {
+  padding-left: 0.25rem;
+  margin-bottom: 0.25rem;
+  list-style-type: decimal;
+}
+.richtext-olist-item:last-child {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .richtext-olist-item {
+    padding-left: 0.5rem;
+  }
+}
+
+.richtext-ulist-item {
+  padding-left: 0.25rem;
+  margin-bottom: 0.25rem;
+  list-style-type: disc;
+}
+.richtext-ulist-item:last-child {
+  margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .richtext-ulist-item {
+    padding-left: 0.5rem;
+  }
+}
+
+.richtext-pre {
+  padding: 1rem;
+  margin-bottom: 1.75rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  border-radius: 0.25rem;
+  background-color: rgb(241 245 249);
+}
+
+.richtext-per:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .richtext-pre {
+    padding: 2rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
+.richtext-strong {
+  font-weight: 600;
+}
+
+.richtext-hyperlink {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-line: underline;
+}
+
+.articlepreview {
+  display: grid;
+  align-items: flex-start;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .articlepreview {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+  }
+}
+
+.articlepreview-image {
+  position: relative;
+  background-color: #f3f4f6;
+  /* 4/3 aspect ratio */
+  padding-top: 75%;
+}
+
+.articlepreview-imagefit {
+  object-fit: cover;
+}
+
+.articlepreview-title {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+@media screen and (min-width: 768px) {
+  .articlepreview-title {
+    grid-column: span 2 / span 2;
+  }
+}
+
+.articlepreview-date {
+  font-family: 'Georgia, Cambria, "Times New Roman", Times, serif';
+  font-style: italic;
+  letter-spacing: -0.05em;
+  color: rgb(100 116 139);
+}
+
+.articlepreview-content {
+  font-family: 'Georgia, Cambria, "Times New Roman", Times, serif';
+  line-height: 1.625;
+}
+@media screen and (min-width: 768px) {
+  .articlepreview-content {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    line-height: 1.625;
+  }
+}
+
+.articlepreview-grid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 4rem;
+}
+
+.field {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: rgb(100 116 139);
+}
+
+.inputfield {
+  width: 100%;
+  border-radius: 0;
+  border-bottom-width: 1px;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 0.75rem;
+  padding-right: 1.75rem;
+  color: rgb(30 41 59);
+}
+
+.inputfield::placeholder {
+  color: #cbd5e0;
+}
+
+.textareafield {
+  color: rgb(30 41 59);
+  width: 100%;
+  height: 10rem;
+  border-radius: 0;
+  border-bottom-width: 1px;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 0.75rem;
+  padding-right: 1.75rem;
+  border-color: rgb(226 232 240);
+}
+
+.textareafield::placeholder {
+  color: #cbd5e0;
+}
+
+.contactform {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1.5rem;
+}
+
+.contactform-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: auto;
+}
+
+.contactform-arrow {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+.image {
+  background-color: rgb(243 244 246);
+}
+
+.figure {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.figcaption {
+  font-family: 'Georgia, Cambria, "Times New Roman", Times, serif';
+  font-style: italic;
+  letter-spacing: -0.025em;
+  text-align: center;
+  color: rgb(100 116 139);
+}
+
+.quote {
+  font-family: 'Georgia, Cambria, "Times New Roman", Times, serif';
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-style: italic;
+  line-height: 1.625;
+}
+
+.text {
+  font-family: 'Georgia, Cambria, "Times New Roman", Times, serif';
+  line-height: 1.625;
+}
+
+@media screen and (min-width: 768px) {
+  .text {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    line-height: 1.625;
+  }
 }

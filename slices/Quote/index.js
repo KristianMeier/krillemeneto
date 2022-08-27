@@ -1,13 +1,13 @@
-import * as prismicH from "@prismicio/helpers";
-import { PrismicText } from "@prismicio/react";
+import * as prismicH from '@prismicio/helpers'
+import { PrismicText } from '@prismicio/react'
 
-import { Bounded } from "../../components/Bounded";
+import { Bounded } from '../../components/Bounded'
 
 const Quote = ({ slice }) => {
   return (
-    <Bounded as="section" size="wide">
+    <Bounded as='section' size='wide'>
       {prismicH.isFilled.richText(slice.primary.quote) && (
-        <div className="font-serif text-3xl italic leading-relaxed">
+        <div className='quote'>
           &ldquo;
           <PrismicText field={slice.primary.quote} />
           &rdquo;
@@ -17,7 +17,7 @@ const Quote = ({ slice }) => {
         </div>
       )}
     </Bounded>
-  );
-};
+  )
+}
 
-export default Quote;
+export default Quote
