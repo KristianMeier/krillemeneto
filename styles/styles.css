@@ -1,0 +1,47 @@
+.bounded-padding {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+
+  @media (min-width: 1024px) {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  @media (min-width: 768px) {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+}
+
+.bounded-full-width-center {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.bounded-small {
+  max-width: 36rem;
+}
+
+.bounded-base {
+  max-width: 48rem;
+}
+
+.bounded-wide {
+  max-width: 56rem;
+}
+
+.bounded-widest {
+  max-width: 72rem;
+}
+
+.campaign-banner {
+  background: #2ab04e;
+  padding: 0.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #fff;
+}
