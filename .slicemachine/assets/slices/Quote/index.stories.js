@@ -5,5 +5,5 @@ export default {
 }
 
 
-export const _Default = () => <MyComponent slice={{"variation":"default","name":"Default","slice_type":"quote","items":[],"primary":{"quote":[{"type":"heading2","text":"Harness world-class applications","spans":[]}],"source":"productize granular blockchains"},"id":"_Default"}} />
-_Default.storyName = 'Default'
+export const _Default = () => <MyComponent slice={{"variation":"default","version":"sktwi1xtmkfgx8626","items":[{}],"primary":{"quote":[{"type":"heading1","text":"Basket","spans":[]}],"source":"nearly"},"slice_type":"quote","id":"_Default"}} />
+_Default.storyName = ''

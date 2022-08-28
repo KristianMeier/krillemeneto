@@ -7,6 +7,7 @@ import { createClient } from '../prismicio'
 import { Layout } from '../components/Layout'
 import { Bounded } from '../components/Bounded'
 import { Heading } from '../components/Heading'
+import Overskrift from '../slices/Overskrift'
 
 const dateFormatter = new Intl.DateTimeFormat('en-US', {
   month: 'short',
@@ -49,6 +50,7 @@ const Article = ({ article }) => {
 
   return (
     <div>
+      <Overskrift />
       <li className='articlepreview'>
         <PrismicLink document={article} tabIndex='-1'>
           <div className='articlepreview-image'>
@@ -86,7 +88,7 @@ const Index = ({ articles, navigation, settings }) => {
         <title>{prismicH.asText(settings.data.name)}</title>
       </Head>
       <Bounded size='widest'>
-        <div className='overskrift-artikel'>Det siger vores kunder</div>
+        <div className='frontpage-titel'>Kundehistorier</div>
         <ul className='articlepreview-grid'>
           {articles.map((article) => (
             <Article key={article.id} article={article} />

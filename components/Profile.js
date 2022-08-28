@@ -8,7 +8,7 @@ export const Profile = ({ name, description, profilePicture }) => {
   return (
     <div className='profile-padding'>
       <div className='profile-grid'>
-        <PrismicLink href='/' tabIndex='-1'>
+        {/* <PrismicLink href='/' tabIndex='-1'>
           <div className='profile-picture'>
             {prismicH.isFilled.image(profilePicture) && (
               <PrismicNextImage
@@ -18,10 +18,10 @@ export const Profile = ({ name, description, profilePicture }) => {
               />
             )}
           </div>
-        </PrismicLink>
+        </PrismicLink> */}
         {(prismicH.isFilled.richText(name) ||
           prismicH.isFilled.richText(description)) && (
-          <div className='profile-text-grid'>
+          <div className='profile-text-grid profile-text'>
             {prismicH.isFilled.richText(name) && (
               <Heading>
                 <PrismicLink href='/'>

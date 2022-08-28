@@ -17,8 +17,6 @@ const NextLinkShim = ({ href, children, locale, ...props }) => {
   )
 }
 
-// Her er der predefinerede styles for h2, h3, ul etc. I bunden er App()
-
 const richTextComponents = {
   heading1: ({ children }) => (
     <Heading as='h2' size='3xl' className='richtext-h2'>

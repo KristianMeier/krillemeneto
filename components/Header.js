@@ -40,7 +40,6 @@ export const Header = ({
             <PrismicRichText field={navigation.data.homepageLabel} />
           )}
         </div> */}
-
         {/* {withProfile && (
           <Profile
             name={settings.data.name}
@@ -49,6 +48,9 @@ export const Header = ({
           />
         )}
         {withDivider && <HorizontalDivider />} */}
+      </div>
+      <div>
+        <HorizontalDivider />
       </div>
     </Bounded>
   )

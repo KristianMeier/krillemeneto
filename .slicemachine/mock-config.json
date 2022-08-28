@@ -33,12 +33,6 @@
       }
     },
     "settings": {
-      "name": {
-        "config": {
-          "patternType": "HEADING",
-          "blocks": 1
-        }
-      },
       "description": {
         "config": {
           "patternType": "PARAGRAPH",
@@ -54,6 +48,12 @@
       "newsletterDisclaimer": {
         "config": {
           "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      },
+      "name": {
+        "config": {
+          "patternType": "HEADING",
           "blocks": 1
         }
       }

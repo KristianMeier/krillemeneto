@@ -1,18 +1,20 @@
 [
   {
     "variation": "default",
-    "name": "Default",
-    "slice_type": "quote",
-    "items": [],
+    "version": "sktwi1xtmkfgx8626",
+    "items": [
+      {}
+    ],
     "primary": {
       "quote": [
         {
-          "type": "heading2",
-          "text": "Harness world-class applications",
+          "type": "heading1",
+          "text": "Basket",
           "spans": []
         }
       ],
-      "source": "productize granular blockchains"
-    }
+      "source": "nearly"
+    },
+    "slice_type": "quote"
   }
 ]

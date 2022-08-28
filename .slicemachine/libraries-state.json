@@ -205,7 +205,7 @@
                     "label": "Overskrift",
                     "placeholder": "This is where it all begins...",
                     "allowTargetBlank": true,
-                    "single": "heading1,paragraph,preformatted,hyperlink,em,image,embed,heading2,heading3,list-item,o-list-item,heading4,heading5,rtl,heading6,strong"
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
                   }
                 }
               },
@@ -225,7 +225,7 @@
               "title": [
                 {
                   "type": "paragraph",
-                  "text": "Id tempor consequat eu aliqua fugiat sint pariatur. Laborum id proident enim voluptate irure mollit sit officia deserunt consectetur sunt.",
+                  "text": "Aliqua minim nostrud sint.",
                   "spans": []
                 }
               ]
@@ -263,7 +263,7 @@
                     "label": "Quote",
                     "placeholder": "Quote without quotation marks",
                     "allowTargetBlank": true,
-                    "single": "heading2"
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
                   }
                 },
                 "source": {
@@ -282,19 +282,21 @@
         "mocks": {
           "default": {
             "variation": "default",
-            "name": "Default",
-            "slice_type": "quote",
-            "items": [],
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
             "primary": {
               "quote": [
                 {
-                  "type": "heading2",
-                  "text": "Harness world-class applications",
+                  "type": "heading1",
+                  "text": "Basket",
                   "spans": []
                 }
               ],
-              "source": "productize granular blockchains"
-            }
+              "source": "nearly"
+            },
+            "slice_type": "quote"
           }
         },
         "meta": {

@@ -55,6 +55,18 @@
             },
             "contact_form": {
               "type": "SharedSlice"
+            },
+            "overskrift": {
+              "type": "SharedSlice"
+            },
+            "sandbox_js": {
+              "type": "SharedSlice"
+            },
+            "sandbox": {
+              "type": "SharedSlice"
+            },
+            "sandbox_next": {
+              "type": "SharedSlice"
             }
           }
         }
