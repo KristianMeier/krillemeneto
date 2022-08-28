@@ -11,7 +11,10 @@ export const Campaign = () => {
           className='campaignbanner-link'
         >
           👋 Velkommen til Meneto - den mindre virksomheds bogholder.{' '}
-          <strong>Klik her</strong> for at spare 10% på det første år.
+          <strong>
+            <u>Klik her </u>
+          </strong>
+          for at spare 10% på det første år.
         </a>
       </p>
     </div>

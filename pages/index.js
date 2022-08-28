@@ -48,28 +48,30 @@ const Article = ({ article }) => {
   const excerpt = getExcerpt(article.data.slices)
 
   return (
-    <li className='articlepreview'>
-      <PrismicLink document={article} tabIndex='-1'>
-        <div className='articlepreview-image'>
-          {prismicH.isFilled.image(featuredImage) && (
-            <PrismicNextImage
-              field={featuredImage}
-              layout='fill'
-              className='articlepreview-imagefit'
-            />
-          )}
+    <div>
+      <li className='articlepreview'>
+        <PrismicLink document={article} tabIndex='-1'>
+          <div className='articlepreview-image'>
+            {prismicH.isFilled.image(featuredImage) && (
+              <PrismicNextImage
+                field={featuredImage}
+                layout='fill'
+                className='articlepreview-imagefit'
+              />
+            )}
+          </div>
+        </PrismicLink>
+        <div className='articlepreview-title'>
+          <Heading as='h2'>
+            <PrismicLink document={article}>
+              <PrismicText field={article.data.title} />
+            </PrismicLink>
+          </Heading>
+          <p className='articlepreview-date'>{dateFormatter.format(date)}</p>
+          {excerpt && <p className='articlepreview-content'>{excerpt}</p>}
         </div>
-      </PrismicLink>
-      <div className='articlepreview-title'>
-        <Heading as='h2'>
-          <PrismicLink document={article}>
-            <PrismicText field={article.data.title} />
-          </PrismicLink>
-        </Heading>
-        <p className='articlepreview-date'>{dateFormatter.format(date)}</p>
-        {excerpt && <p className='articlepreview-content'>{excerpt}</p>}
-      </div>
-    </li>
+      </li>
+    </div>
   )
 }
 
@@ -84,6 +86,7 @@ const Index = ({ articles, navigation, settings }) => {
         <title>{prismicH.asText(settings.data.name)}</title>
       </Head>
       <Bounded size='widest'>
+        <div className='overskrift-artikel'>Det siger vores kunder</div>
         <ul className='articlepreview-grid'>
           {articles.map((article) => (
             <Article key={article.id} article={article} />
