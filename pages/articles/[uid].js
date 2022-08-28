@@ -52,7 +52,7 @@ const Article = ({ article, latestArticles, navigation, settings }) => {
       </Head>
       <Bounded>
         <PrismicLink href='/' className='article-link'>
-          &larr; Back to articles
+          &larr; Tilbage
         </PrismicLink>
       </Bounded>
       <article>
@@ -70,7 +70,7 @@ const Article = ({ article, latestArticles, navigation, settings }) => {
             <HorizontalDivider />
             <div className='article-endsection-width'>
               <Heading size='2xl' className='article-lastarticles'>
-                Latest articles
+                Nyeste kundeudtalelser
               </Heading>
               <ul className='article-lastarticles-grid'>
                 {latestArticles.map((article) => (
