@@ -4,17 +4,14 @@ export const Campaign = () => {
   return (
     <div className='campaignbanner'>
       <p>
-        <strong>
-          👋 Velkommen til Meneto - den mindre virksomheds bogholder.{' '}
-        </strong>{' '}
-        Klik her for at spare{' '}
         <a
-          href=''
+          href='https://www.google.com'
           target='_blank'
           rel='noreferrer'
           className='campaignbanner-link'
         >
-          10% på det første år.
+          👋 Velkommen til Meneto - den mindre virksomheds bogholder.{' '}
+          <strong>Klik her</strong> for at spare 10% på det første år.
         </a>
       </p>
     </div>

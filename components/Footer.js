@@ -9,7 +9,7 @@ export const Footer = ({ withSignUpForm = true, settings }) => {
     <Bounded as='footer'>
       <div className='footer-container'>
         <HorizontalDivider />
-        {withSignUpForm && <SignUpForm settings={settings} />}
+        {/* {withSignUpForm && <SignUpForm settings={settings} />} */}
         <div className='footer-buttom-text'>
           Proudly published using{' '}
           <PrismicLink

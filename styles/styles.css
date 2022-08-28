@@ -5,10 +5,7 @@
 }
 
 .bounded-padding {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding: 1rem;
 }
 
 /* @media screen and (min-width: 768px) {

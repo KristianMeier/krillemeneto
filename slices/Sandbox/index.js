@@ -1,6 +1,6 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Bounded } from '../../components/Bounded'
-import { HorizontalDivider } from '../../components/HorizontalDivider'
+import { PrismicRichText } from '@prismicio/react'
 
 const data = [
   {
@@ -30,7 +30,7 @@ const List = ({ people }) => {
       {people.map((person) => {
         const { id, name, image } = person
         return (
-          <article className='sandbox-container' key={id}>
+          <article key={id}>
             <h4 className='sandbox-text'>
               {name} {id}
             </h4>
@@ -44,15 +44,12 @@ const List = ({ people }) => {
 
 // Der skal reloades, hvis data-array ændres. Det er ikke dynamisk. Nok SSR.
 
-const Sandbox = () => {
-  const [people, setPeople] = useState(data)
+const Sandbox = ({ slice }) => {
   return (
     <Bounded as='section' size='small'>
-      <section>
-        <List people={people} />
-        <button className='sandbox-button' onClick={() => setPeople([])}>
-          Test - Slet folk
-        </button>
+      <section className='sandbox-container'>
+        <PrismicRichText field={slice.primary.title} />
+        <List people={data} />
       </section>
       <hr className='sandbox-hr' />
     </Bounded>

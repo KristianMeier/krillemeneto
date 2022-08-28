@@ -1,5 +1,5 @@
 import * as prismicH from '@prismicio/helpers'
-import { PrismicLink, PrismicText } from '@prismicio/react'
+import { PrismicLink, PrismicRichText, PrismicText } from '@prismicio/react'
 
 import { Bounded } from './Bounded'
 import { HorizontalDivider } from './HorizontalDivider'
@@ -34,14 +34,21 @@ export const Header = ({
             ))}
           </ul>
         </nav>
-        {withProfile && (
+
+        {/* <div className=''>
+          {navigation.data.homepageLabel && (
+            <PrismicRichText field={navigation.data.homepageLabel} />
+          )}
+        </div> */}
+
+        {/* {withProfile && (
           <Profile
             name={settings.data.name}
             description={settings.data.description}
             profilePicture={settings.data.profilePicture}
           />
         )}
-        {withDivider && <HorizontalDivider />}
+        {withDivider && <HorizontalDivider />} */}
       </div>
     </Bounded>
   )

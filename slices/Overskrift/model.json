@@ -1,23 +1,23 @@
 {
-  "id": "sandbox",
+  "id": "overskrift",
   "type": "SharedSlice",
-  "name": "Sandbox",
-  "description": "Sandbox",
+  "name": "Overskrift",
+  "description": "Overskrift",
   "variations": [
     {
       "id": "default",
       "name": "Default",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "Sandbox",
+      "description": "Overskrift",
       "primary": {
         "title": {
           "type": "StructuredText",
           "config": {
-            "label": "Title",
-            "placeholder": "",
+            "label": "Overskrift",
+            "placeholder": "This is where it all begins...",
             "allowTargetBlank": true,
-            "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+            "single": "heading1,paragraph,preformatted,hyperlink,em,image,embed,heading2,heading3,list-item,o-list-item,heading4,heading5,rtl,heading6,strong"
           }
         }
       },

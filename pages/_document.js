@@ -14,6 +14,10 @@ export default function Document() {
           href='https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap'
           rel='stylesheet'
         />
+        <link
+          rel='icon'
+          href='https://www.clipartmax.com/png/full/179-1795386_patient-success-success-icon-png.png'
+        />
       </Head>
       <body className='body-smoothening'>
         <Main />

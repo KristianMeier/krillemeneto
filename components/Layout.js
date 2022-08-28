@@ -1,6 +1,7 @@
 import { Header } from './Header'
 import { Footer } from './Footer'
 import { Campaign } from './Campaign'
+import { PrismicText } from '@prismicio/react'
 
 export const Layout = ({
   navigation,

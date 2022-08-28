@@ -181,6 +181,64 @@
           }
         }
       },
+      "overskrift": {
+        "library": "slices",
+        "id": "overskrift",
+        "name": "Overskrift",
+        "description": "Overskrift",
+        "model": {
+          "id": "overskrift",
+          "type": "SharedSlice",
+          "name": "Overskrift",
+          "description": "Overskrift",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "Overskrift",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Overskrift",
+                    "placeholder": "This is where it all begins...",
+                    "allowTargetBlank": true,
+                    "single": "heading1,paragraph,preformatted,hyperlink,em,image,embed,heading2,heading3,list-item,o-list-item,heading4,heading5,rtl,heading6,strong"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "paragraph",
+                  "text": "Id tempor consequat eu aliqua fugiat sint pariatur. Laborum id proident enim voluptate irure mollit sit officia deserunt consectetur sunt.",
+                  "spans": []
+                }
+              ]
+            },
+            "slice_type": "overskrift"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
       "quote": {
         "library": "slices",
         "id": "quote",
@@ -268,7 +326,17 @@
               "docURL": "...",
               "version": "sktwi1xtmkfgx8626",
               "description": "Sandbox",
-              "primary": {},
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                }
+              },
               "items": {},
               "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
             }
@@ -281,8 +349,74 @@
             "items": [
               {}
             ],
-            "primary": {},
-            "slice_type": "testing"
+            "primary": {
+              "title": [
+                {
+                  "type": "paragraph",
+                  "text": "Ea laboris est ea nulla culpa officia veniam. Mollit enim exercitation eu Lorem aliquip.",
+                  "spans": []
+                }
+              ]
+            },
+            "slice_type": "sandbox"
+          }
+        },
+        "meta": {
+          "fileName": "index",
+          "extension": "js"
+        },
+        "screenshotPaths": {}
+      },
+      "sandbox_js": {
+        "library": "slices",
+        "id": "sandbox_js",
+        "name": "SandboxJs",
+        "description": "SandboxJs",
+        "model": {
+          "id": "sandbox_js",
+          "type": "SharedSlice",
+          "name": "SandboxJs",
+          "description": "SandboxJs",
+          "variations": [
+            {
+              "id": "default",
+              "name": "Default",
+              "docURL": "...",
+              "version": "sktwi1xtmkfgx8626",
+              "description": "SandboxJs",
+              "primary": {
+                "title": {
+                  "type": "StructuredText",
+                  "config": {
+                    "label": "Title",
+                    "placeholder": "",
+                    "allowTargetBlank": true,
+                    "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+                  }
+                }
+              },
+              "items": {},
+              "imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+            }
+          ]
+        },
+        "mocks": {
+          "default": {
+            "variation": "default",
+            "version": "sktwi1xtmkfgx8626",
+            "items": [
+              {}
+            ],
+            "primary": {
+              "title": [
+                {
+                  "type": "paragraph",
+                  "text": "Ad irure ea ad duis aliqua voluptate sunt ullamco aliqua enim labore sit culpa ullamco deserunt.",
+                  "spans": []
+                }
+              ]
+            },
+            "slice_type": "sandbox_js"
           }
         },
         "meta": {

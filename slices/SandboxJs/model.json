@@ -1,15 +1,15 @@
 {
-  "id": "sandbox",
+  "id": "sandbox_js",
   "type": "SharedSlice",
-  "name": "Sandbox",
-  "description": "Sandbox",
+  "name": "SandboxJs",
+  "description": "SandboxJs",
   "variations": [
     {
       "id": "default",
       "name": "Default",
       "docURL": "...",
       "version": "sktwi1xtmkfgx8626",
-      "description": "Sandbox",
+      "description": "SandboxJs",
       "primary": {
         "title": {
           "type": "StructuredText",

@@ -11,7 +11,7 @@
           "label": "Homepage Label",
           "placeholder": "Label for the homepage link",
           "allowTargetBlank": false,
-          "single": "heading3"
+          "single": "heading3,paragraph,em,preformatted,hyperlink,image,heading1,heading2,embed,list-item,o-list-item,heading4,heading5,rtl,heading6,strong"
         }
       },
       "links": {
@@ -25,7 +25,7 @@
                 "label": "Label",
                 "placeholder": "Optional - Label for the link",
                 "allowTargetBlank": false,
-                "single": "heading3"
+                "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
               }
             },
             "link": {
@@ -33,6 +33,7 @@
               "config": {
                 "label": "Link",
                 "placeholder": "Link for navigation item",
+                "allowTargetBlank": false,
                 "select": null
               }
             }

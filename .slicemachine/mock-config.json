@@ -125,6 +125,23 @@
       "default": {
         "primary": {}
       }
+    },
+    "Overskrift": {
+      "default": {
+        "primary": {
+          "title": {
+            "config": {
+              "patternType": "PARAGRAPH",
+              "blocks": 1
+            }
+          }
+        }
+      }
+    },
+    "SandboxJs": {
+      "default": {
+        "primary": {}
+      }
     }
   }
 }

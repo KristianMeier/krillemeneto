@@ -2,16 +2,20 @@
 
 import ContactForm from './ContactForm';
 import Image from './Image';
+import Overskrift from './Overskrift';
 import Quote from './Quote';
 import Sandbox from './Sandbox';
+import SandboxJs from './SandboxJs';
 import SandboxNext from './SandboxNext';
 import Text from './Text';
 
 export {
 	ContactForm,
 	Image,
+	Overskrift,
 	Quote,
 	Sandbox,
+	SandboxJs,
 	SandboxNext,
 	Text,
 };
@@ -19,8 +23,10 @@ export {
 export const components = {
 	contact_form: ContactForm,
 	image: Image,
+	overskrift: Overskrift,
 	quote: Quote,
 	sandbox: Sandbox,
+	sandbox_js: SandboxJs,
 	sandbox_next: SandboxNext,
 	text: Text,
 };

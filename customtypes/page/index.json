@@ -43,6 +43,12 @@
             },
             "sandbox_next": {
               "type": "SharedSlice"
+            },
+            "overskrift": {
+              "type": "SharedSlice"
+            },
+            "sandbox_js": {
+              "type": "SharedSlice"
             }
           }
         }

@@ -1,12 +1,20 @@
 {
-  "id": "91725e73-0c0d-4a3d-a9d9-db33cf1ff70a",
-  "uid": "dolores-aut-aliquam",
+  "id": "mock-doc-id",
+  "url": null,
   "type": "navigation",
+  "href": null,
+  "tags": [],
+  "first_publication_date": "1970-01-01T00:00:01+0000",
+  "last_publication_date": "1970-01-01T00:00:01+0000",
+  "slugs": [],
+  "linked_documents": [],
+  "lang": "en-us",
+  "alternate_languages": [],
   "data": {
     "homepageLabel": [
       {
         "type": "heading3",
-        "text": "Enable intuitive channels",
+        "text": "Various",
         "spans": []
       }
     ],
@@ -14,27 +22,14 @@
       {
         "label": [
           {
-            "type": "heading3",
-            "text": "Implement interactive portals",
+            "type": "paragraph",
+            "text": "Et eiusmod officia cillum quis nulla laborum. Non reprehenderit ad do nostrud esse aute veniam Lorem aliquip esse sunt reprehenderit id. Eiusmod deserunt officia et consectetur non amet nisi id culpa.",
             "spans": []
           }
         ],
         "link": {
           "link_type": "Web",
-          "url": "http://google.com"
-        }
-      },
-      {
-        "label": [
-          {
-            "type": "heading3",
-            "text": "Optimize innovative eyeballs",
-            "spans": []
-          }
-        ],
-        "link": {
-          "link_type": "Web",
-          "url": "https://prismic.io"
+          "url": "https://slicemachine.dev"
         }
       }
     ]
