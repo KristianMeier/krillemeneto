@@ -3,12 +3,16 @@
 import ContactForm from './ContactForm';
 import Image from './Image';
 import Quote from './Quote';
+import Sandbox from './Sandbox';
+import SandboxNext from './SandboxNext';
 import Text from './Text';
 
 export {
 	ContactForm,
 	Image,
 	Quote,
+	Sandbox,
+	SandboxNext,
 	Text,
 };
 
@@ -16,5 +20,7 @@ export const components = {
 	contact_form: ContactForm,
 	image: Image,
 	quote: Quote,
+	sandbox: Sandbox,
+	sandbox_next: SandboxNext,
 	text: Text,
 };

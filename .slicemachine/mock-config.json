@@ -110,6 +110,21 @@
       "default": {
         "primary": {}
       }
+    },
+    "Testing": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "Sandbox": {
+      "default": {
+        "primary": {}
+      }
+    },
+    "SandboxNext": {
+      "default": {
+        "primary": {}
+      }
     }
   }
 }

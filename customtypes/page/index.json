@@ -37,6 +37,12 @@
             },
             "contact_form": {
               "type": "SharedSlice"
+            },
+            "sandbox": {
+              "type": "SharedSlice"
+            },
+            "sandbox_next": {
+              "type": "SharedSlice"
             }
           }
         }

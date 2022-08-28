@@ -1,5 +1,6 @@
 import { Header } from './Header'
 import { Footer } from './Footer'
+import { Campaign } from './Campaign'
 
 export const Layout = ({
   navigation,
@@ -11,6 +12,7 @@ export const Layout = ({
 }) => {
   return (
     <div className='layout-color'>
+      <Campaign />
       <Header
         withProfile={withProfile}
         withDivider={withHeaderDivider}

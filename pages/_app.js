@@ -6,8 +6,8 @@ import { repositoryName, linkResolver } from '../prismicio'
 
 import '../styles/globals.css'
 import '../styles/styles.css'
+import '../styles/sandbox.css'
 import { Heading } from '../components/Heading'
-import { Campaign } from '../components/Campaign'
 
 const NextLinkShim = ({ href, children, locale, ...props }) => {
   return (
@@ -67,7 +67,6 @@ export default function App({ Component, pageProps }) {
       internalLinkComponent={NextLinkShim}
       richTextComponents={richTextComponents}
     >
-      <Campaign />
       <PrismicPreview repositoryName={repositoryName}>
         <Component {...pageProps} />
       </PrismicPreview>
