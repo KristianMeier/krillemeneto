@@ -1,5 +1,6 @@
 import { PrismicLink } from '@prismicio/react'
 import { SignUpForm } from './SignUpForm'
+import Image from 'next/image'
 
 import { Bounded } from './Bounded'
 import { HorizontalDivider } from './HorizontalDivider'
@@ -23,7 +24,7 @@ export const Footer = ({ withSignUpForm = true, settings }) => {
         </div>
       </Bounded>
       <img
-        src='https://i.postimg.cc/4xz8bZyh/Meneto5.png'
+        src='/images/Meneto5.png'
         border='0'
         alt='Meneto5'
         className='footer-temp'
