@@ -646,20 +646,15 @@
     sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
     'Noto Color Emoji';
   text-align: left;
-  font-weight: 1000;
+  font-weight: bolder;
   font-size: 2.5rem;
-  padding-top: 1rem;
+  padding-top: 1.5;
 }
 
 @media screen and (min-width: 768px) {
   .frontpage-titel {
-    font-size: 3.25rem;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .frontpage-titel {
-    font-size: 4rem;
+    font-size: 3rem;
+    padding-top: 2.5rem;
   }
 }
 
